@@ -1,0 +1,115 @@
+Python 3.10.19 (main, Oct 21 2025, 16:43:05) [GCC 11.2.0]
+Type "copyright", "credits" or "license" for more information.
+
+IPython 8.30.0 -- An enhanced Interactive Python. Type '?' for help.
+
+%runfile /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/rice_motif_pipeline_global.py --wdir
+======================================================================
+MULTI-VARIETY RICE MOTIF PIPELINE (GLOBAL COUNTS - NO BINNING)
+======================================================================
+Loading data from: /home/saiful/DeepRice/motif_based_classification_ALL_DATA/data_preprocess/RiceMetaSys_Drought_merged_all_excels_6.csv
+  Original shape: (44502, 5)
+  Cleaned shape: (44502, 6)
+
+  Variety distribution:
+Variety
+IR64_Cleaned    17618
+N22_Cleaned3    12597
+Dhaggadeshi      3176
+Nipponbare       2622
+Moroberekan      1879
+IR20             1769
+IRAT109           956
+Bala              923
+ZS97              910
+Tampha            719
+Pokkali           624
+Azucena           581
+Chandan           128
+Name: count, dtype: int64
+
+  Tissue distribution:
+Tissue
+Seedling         9186
+Root             9056
+Panicle          8600
+Leaf             7541
+Flag Leaf        3643
+Inflorescence    2459
+Anther           2315
+Pistil           1702
+Name: count, dtype: int64
+
+  Stage distribution:
+Stage
+Reproductive Stage          25774
+Vegetative Stage             7052
+Seedling Stage               5762
+Panicle Elongation Stage     2799
+Tillering Stage              2234
+Booting Stage                 881
+Name: count, dtype: int64
+
+  Label distribution (0=Down, 1=Up):
+label
+1    23716
+0    20786
+Name: count, dtype: int64
+
+Scanning 44502 sequences for 54 motifs (global counts)...
+  Processed 5000/44502 sequences (11.2%)...
+  Processed 10000/44502 sequences (22.5%)...
+  Processed 15000/44502 sequences (33.7%)...
+  Processed 20000/44502 sequences (44.9%)...
+  Processed 25000/44502 sequences (56.2%)...
+  Processed 30000/44502 sequences (67.4%)...
+  Processed 35000/44502 sequences (78.6%)...
+  Processed 40000/44502 sequences (89.9%)...
+  Done! Matrix shape: (44502, 62)
+
+Encoding Variety, Tissue, and Stage conditions...
+  Motif + seq stat features: 58
+  Variety features: 13
+  Tissue features: 8
+  Stage features: 6
+  Total features: 85
+
+Splitting data (0.8:0.1:0.1)...
+  Train: 35601 samples
+  Dev:   4450 samples
+  Test:  4451 samples
+    Train: Up=18972, Down=16629 (53.3% up)
+    Dev: Up=2372, Down=2078 (53.3% up)
+    Test: Up=2372, Down=2079 (53.3% up)
+
+Saved files:
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/output_global_data/train.csv
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/output_global_data/dev.csv
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/output_global_data/test.csv
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/output_global_data/feature_names.txt
+
+======================================================================
+FEATURE SUMMARY
+======================================================================
+
+Motif features (global counts): 54
+  Examples: ['ABRE', 'ABRE_core', 'CE1', 'CE3', 'DRE_CRT', 'DRE_full', 'LTRE', 'MYB_core', 'MYB1AT', 'MYB2']
+
+Sequence statistics: 4
+  ['length', 'gc_content', 'at_content', 'gc_skew']
+
+Variety one-hot features: 13
+  ['Variety_Azucena', 'Variety_Bala', 'Variety_Chandan', 'Variety_Dhaggadeshi', 'Variety_IR20', 'Variety_IR64_Cleaned', 'Variety_IRAT109', 'Variety_Moroberekan', 'Variety_N22_Cleaned3', 'Variety_Nipponbare', 'Variety_Pokkali', 'Variety_Tampha', 'Variety_ZS97']
+
+Tissue one-hot features: 8
+  ['Tissue_Anther', 'Tissue_Flag Leaf', 'Tissue_Inflorescence', 'Tissue_Leaf', 'Tissue_Panicle', 'Tissue_Pistil', 'Tissue_Root', 'Tissue_Seedling']
+
+Stage one-hot features: 6
+  ['Stage_Booting Stage', 'Stage_Panicle Elongation Stage', 'Stage_Reproductive Stage', 'Stage_Seedling Stage', 'Stage_Tillering Stage', 'Stage_Vegetative Stage']
+
+======================================================================
+PIPELINE COMPLETE
+======================================================================
+
+Next step: Train classifier using:
+  python rice_hybrid_classifier_global.py

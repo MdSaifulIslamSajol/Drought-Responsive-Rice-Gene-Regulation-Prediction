@@ -1,0 +1,85 @@
+ABRE
+ABRE_core
+CE1
+CE3
+DRE_CRT
+DRE_full
+LTRE
+MYB_core
+MYB1AT
+MYB2
+MYBCORE
+MYC
+WBOX
+WBOX_core
+GT1
+GT1_core
+HSE
+HSE_core
+GCC_box
+ERE
+GBOX
+IBOX
+CAAT_box
+STRE
+LTRE_like
+JASE
+TBOX
+NAC_core
+NACRS
+ACGT_core
+ABRE_like
+AuxRE
+AuxRE_rev
+ROOTMOTIF
+AS1
+TATA_box
+CACTFTPPCA1
+ICE_box
+CBF_DRE
+ACGT
+CACG
+CATG
+CGTG
+GCGT
+AACA
+CAAC
+AAAG
+GATA
+TATA
+CAAT
+GCCG
+CGCG
+TGAC
+GTAC
+length
+gc_content
+at_content
+gc_skew
+Variety_Azucena
+Variety_Bala
+Variety_Chandan
+Variety_Dhaggadeshi
+Variety_IR20
+Variety_IR64_Cleaned
+Variety_IRAT109
+Variety_Moroberekan
+Variety_N22_Cleaned3
+Variety_Nipponbare
+Variety_Pokkali
+Variety_Tampha
+Variety_ZS97
+Tissue_Anther
+Tissue_Flag Leaf
+Tissue_Inflorescence
+Tissue_Leaf
+Tissue_Panicle
+Tissue_Pistil
+Tissue_Root
+Tissue_Seedling
+Stage_Booting Stage
+Stage_Panicle Elongation Stage
+Stage_Reproductive Stage
+Stage_Seedling Stage
+Stage_Tillering Stage
+Stage_Vegetative Stage

@@ -1,0 +1,93 @@
+====================================================================================================
+TOP-K RICE VARIETIES CLASSIFICATION COMPARISON REPORT
+====================================================================================================
+Generated: 2026-05-06 06:46:41
+
+----------------------------------------------------------------------------------------------------
+BEST OVERALL CONFIGURATION
+----------------------------------------------------------------------------------------------------
+  Optimal Number of Varieties: Top 12
+  Varieties: Azucena, Bala, Dhaggadeshi, IR20, IR64_Cleaned, IRAT109, Moroberekan, N22_Cleaned3, Nipponbare, Pokkali, Tampha, ZS97
+  Best Model: HybridLSTM
+  Total Samples: 44,896
+
+  Performance Metrics:
+    - ROC-AUC:           0.7825
+    - F1 Score:          0.7222
+    - MCC:               0.4009
+    - Balanced Accuracy: 0.7002
+    - Precision:         0.7168
+    - Recall:            0.7276
+    - Specificity:       0.6729
+    - PR-AUC:            0.8110
+
+----------------------------------------------------------------------------------------------------
+PERFORMANCE RANKING (By Test AUC)
+----------------------------------------------------------------------------------------------------
+
+Rank   Top-K    Model                     Samples      AUC        F1         MCC       
+-------------------------------------------------------------------------------------------
+1      Top 12   HybridLSTM                44,896       0.7825     0.7222     0.4009    
+2      Top 8    HybridGatedFusion         42,060       0.7807     0.7233     0.4141    
+3      Top 6    HybridLSTM                40,181       0.7769     0.7193     0.3982    
+4      Top 11   HybridCNNAttention        44,315       0.7767     0.7053     0.3691    
+5      Top 10   HybridGatedFusion         43,689       0.7759     0.7134     0.4041    
+6      Top 13   HybridLSTM                45,024       0.7750     0.7132     0.3924    
+7      Top 7    HybridGatedFusion         41,137       0.7720     0.7082     0.3814    
+8      Top 9    HybridLSTM                42,970       0.7677     0.7157     0.3925    
+9      Top 5    HybridLSTM                38,412       0.7525     0.7163     0.3690    
+10     Top 4    HybridLSTM                36,533       0.7459     0.7106     0.3412    
+11     Top 3    HybridMLP                 33,911       0.7316     0.6334     0.3463    
+12     Top 2    HybridMLP                 30,735       0.7105     0.5962     0.3155    
+13     Top 1    HybridMLP                 18,134       0.6853     0.5907     0.2544    
+
+----------------------------------------------------------------------------------------------------
+WORST PERFORMING CONFIGURATION
+----------------------------------------------------------------------------------------------------
+  Configuration: Top 1
+  Best Model: HybridMLP
+  Test AUC: 0.6853
+  Test F1: 0.5907
+
+----------------------------------------------------------------------------------------------------
+SUMMARY STATISTICS
+----------------------------------------------------------------------------------------------------
+  Total configurations tested: 13
+  AUC range: 0.6853 - 0.7825
+  AUC mean ± std: 0.7564 ± 0.0304
+  F1 range: 0.5907 - 0.7233
+  MCC range: 0.2544 - 0.4141
+
+----------------------------------------------------------------------------------------------------
+VARIETY DETAILS BY TOP-K
+----------------------------------------------------------------------------------------------------
+
+Top 1: IR64_Cleaned
+
+Top 2: IR64_Cleaned, N22_Cleaned3
+
+Top 3: Dhaggadeshi, IR64_Cleaned, N22_Cleaned3
+
+Top 4: Dhaggadeshi, IR64_Cleaned, N22_Cleaned3, Nipponbare
+
+Top 5: Dhaggadeshi, IR64_Cleaned, Moroberekan, N22_Cleaned3, Nipponbare
+
+Top 6: Dhaggadeshi, IR20, IR64_Cleaned, Moroberekan, N22_Cleaned3, Nipponbare
+
+Top 7: Dhaggadeshi, IR20, IR64_Cleaned, IRAT109, Moroberekan, N22_Cleaned3, Nipponbare
+
+Top 8: Bala, Dhaggadeshi, IR20, IR64_Cleaned, IRAT109, Moroberekan, N22_Cleaned3, Nipponbare
+
+Top 9: Bala, Dhaggadeshi, IR20, IR64_Cleaned, IRAT109, Moroberekan, N22_Cleaned3, Nipponbare, ZS97
+
+Top 10: Bala, Dhaggadeshi, IR20, IR64_Cleaned, IRAT109, Moroberekan, N22_Cleaned3, Nipponbare, Tampha, ZS97
+
+Top 11: Bala, Dhaggadeshi, IR20, IR64_Cleaned, IRAT109, Moroberekan, N22_Cleaned3, Nipponbare, Pokkali, Tampha, ZS97
+
+Top 12: Azucena, Bala, Dhaggadeshi, IR20, IR64_Cleaned, IRAT109, Moroberekan, N22_Cleaned3, Nipponbare, Pokkali, Tampha, ZS97
+
+Top 13: Azucena, Bala, Chandan, Dhaggadeshi, IR20, IR64_Cleaned, IRAT109, Moroberekan, N22_Cleaned3, Nipponbare, Pokkali, Tampha, ZS97
+
+====================================================================================================
+END OF REPORT
+====================================================================================================

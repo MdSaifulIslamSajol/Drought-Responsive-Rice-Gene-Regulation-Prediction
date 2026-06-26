@@ -1,0 +1,107 @@
+================================================================================
+RICE MOTIF PIPELINE - TOP 1 VARIETIES
+================================================================================
+Loading data from: /home/saiful/DeepRice/motif_based_classification_ALL_DATA/data_preprocess/RiceMetaSys_Drought_merged_all_excels_5.csv
+  Original shape: (45024, 5)
+  Cleaned shape (before variety filter): (45024, 6)
+
+  Full Variety distribution:
+Variety
+IR64_Cleaned    18134
+N22_Cleaned3    12601
+Dhaggadeshi      3176
+Nipponbare       2622
+Moroberekan      1879
+IR20             1769
+IRAT109           956
+Bala              923
+ZS97              910
+Tampha            719
+Pokkali           626
+Azucena           581
+Chandan           128
+Name: count, dtype: int64
+
+  Selecting TOP 1 varieties: ['IR64_Cleaned']
+  Filtered shape (top 1 varieties): (18134, 6)
+
+  Selected Variety distribution:
+Variety
+IR64_Cleaned    18134
+Name: count, dtype: int64
+
+  Tissue distribution:
+Tissue
+Panicle          7785
+Leaf             3913
+Root             3432
+Seedling         1950
+Inflorescence     559
+Flag Leaf         495
+Name: count, dtype: int64
+
+  Stage distribution:
+Stage
+Reproductive Stage          10270
+Panicle Elongation Stage     2799
+Tillering Stage              2234
+Vegetative Stage             1950
+Booting Stage                 881
+Name: count, dtype: int64
+
+  Label distribution (0=Down, 1=Up):
+label
+1    9660
+0    8474
+Name: count, dtype: int64
+
+Scanning 18134 sequences for 54 motifs (global counts)...
+  Processed 5000/18134 sequences (27.6%)...
+  Processed 10000/18134 sequences (55.1%)...
+  Processed 15000/18134 sequences (82.7%)...
+  Done! Matrix shape: (18134, 62)
+
+Encoding Variety, Tissue, and Stage conditions...
+  Motif + seq stat features: 58
+  Variety features: 1
+  Tissue features: 6
+  Stage features: 5
+  Total features: 70
+
+Splitting data (0.8:0.1:0.1)...
+  Train: 14507 samples
+  Dev:   1813 samples
+  Test:  1814 samples
+    Train: Up=7728, Down=6779 (53.3% up)
+    Dev: Up=966, Down=847 (53.3% up)
+    Test: Up=966, Down=848 (53.3% up)
+
+Saved files:
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top1/data/train.csv
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top1/data/dev.csv
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top1/data/test.csv
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top1/data/feature_names.txt
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top1/data/varieties_info.txt
+
+================================================================================
+FEATURE SUMMARY
+================================================================================
+
+Motif features (global counts): 54
+  Examples: ['ABRE', 'ABRE_core', 'CE1', 'CE3', 'DRE_CRT', 'DRE_full', 'LTRE', 'MYB_core', 'MYB1AT', 'MYB2']
+
+Sequence statistics: 4
+  ['length', 'gc_content', 'at_content', 'gc_skew']
+
+Variety one-hot features: 1
+  ['Variety_IR64_Cleaned']
+
+Tissue one-hot features: 6
+  ['Tissue_Flag Leaf', 'Tissue_Inflorescence', 'Tissue_Leaf', 'Tissue_Panicle', 'Tissue_Root', 'Tissue_Seedling']
+
+Stage one-hot features: 5
+  ['Stage_Booting Stage', 'Stage_Panicle Elongation Stage', 'Stage_Reproductive Stage', 'Stage_Tillering Stage', 'Stage_Vegetative Stage']
+
+================================================================================
+TOP 1 PIPELINE COMPLETE
+================================================================================

@@ -1,0 +1,340 @@
+==============================================================================
+           TOP-K RICE VARIETIES CLASSIFICATION PIPELINE
+==============================================================================
+Start Time: 2026-05-05 15:58:24
+Base Directory: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k
+GPU Device: 2
+
+[0;34mRunning for ALL top-k values: 1 to 13[0m
+
+==============================================================================
+
+[1;33m##############################################################################[0m
+[1;33m#  PROCESSING TOP-1 VARIETIES[0m
+[1;33m##############################################################################[0m
+Start Time: 2026-05-05 15:58:24
+
+[0;34mStep 1: Running Motif Pipeline for top-1...[0m
+[0;32m  ✓ Motif pipeline completed successfully[0m
+[0;34mStep 2: Running Hybrid Classifier for top-1...[0m
+[0;32m  ✓ Classifier completed successfully[0m
+
+[0;32mTOP-1 COMPLETED in 24m 26s[0m
+Results saved to: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top1/results
+
+Quick Results (Best Model):
+  Model: HybridMLP
+  AUC: 0.6853, F1: 0.5907, MCC: 0.2544
+
+Progress: 1/13 completed, 0 failed
+
+
+[1;33m##############################################################################[0m
+[1;33m#  PROCESSING TOP-2 VARIETIES[0m
+[1;33m##############################################################################[0m
+Start Time: 2026-05-05 16:22:50
+
+[0;34mStep 1: Running Motif Pipeline for top-2...[0m
+[0;32m  ✓ Motif pipeline completed successfully[0m
+[0;34mStep 2: Running Hybrid Classifier for top-2...[0m
+[0;32m  ✓ Classifier completed successfully[0m
+
+[0;32mTOP-2 COMPLETED in 40m 22s[0m
+Results saved to: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top2/results
+
+Quick Results (Best Model):
+  Model: HybridMLP
+  AUC: 0.7105, F1: 0.5962, MCC: 0.3155
+
+Progress: 2/13 completed, 0 failed
+
+
+[1;33m##############################################################################[0m
+[1;33m#  PROCESSING TOP-3 VARIETIES[0m
+[1;33m##############################################################################[0m
+Start Time: 2026-05-05 17:03:12
+
+[0;34mStep 1: Running Motif Pipeline for top-3...[0m
+[0;32m  ✓ Motif pipeline completed successfully[0m
+[0;34mStep 2: Running Hybrid Classifier for top-3...[0m
+[0;32m  ✓ Classifier completed successfully[0m
+
+[0;32mTOP-3 COMPLETED in 58m 48s[0m
+Results saved to: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top3/results
+
+Quick Results (Best Model):
+  Model: HybridMLP
+  AUC: 0.7316, F1: 0.6334, MCC: 0.3463
+
+Progress: 3/13 completed, 0 failed
+
+
+[1;33m##############################################################################[0m
+[1;33m#  PROCESSING TOP-4 VARIETIES[0m
+[1;33m##############################################################################[0m
+Start Time: 2026-05-05 18:02:00
+
+[0;34mStep 1: Running Motif Pipeline for top-4...[0m
+[0;32m  ✓ Motif pipeline completed successfully[0m
+[0;34mStep 2: Running Hybrid Classifier for top-4...[0m
+[0;32m  ✓ Classifier completed successfully[0m
+
+[0;32mTOP-4 COMPLETED in 67m 51s[0m
+Results saved to: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top4/results
+
+Quick Results (Best Model):
+  Model: HybridLSTM
+  AUC: 0.7459, F1: 0.7106, MCC: 0.3412
+
+Progress: 4/13 completed, 0 failed
+
+
+[1;33m##############################################################################[0m
+[1;33m#  PROCESSING TOP-5 VARIETIES[0m
+[1;33m##############################################################################[0m
+Start Time: 2026-05-05 19:09:51
+
+[0;34mStep 1: Running Motif Pipeline for top-5...[0m
+[0;32m  ✓ Motif pipeline completed successfully[0m
+[0;34mStep 2: Running Hybrid Classifier for top-5...[0m
+[0;32m  ✓ Classifier completed successfully[0m
+
+[0;32mTOP-5 COMPLETED in 73m 35s[0m
+Results saved to: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top5/results
+
+Quick Results (Best Model):
+  Model: HybridLSTM
+  AUC: 0.7525, F1: 0.7163, MCC: 0.3690
+
+Progress: 5/13 completed, 0 failed
+
+
+[1;33m##############################################################################[0m
+[1;33m#  PROCESSING TOP-6 VARIETIES[0m
+[1;33m##############################################################################[0m
+Start Time: 2026-05-05 20:23:26
+
+[0;34mStep 1: Running Motif Pipeline for top-6...[0m
+[0;32m  ✓ Motif pipeline completed successfully[0m
+[0;34mStep 2: Running Hybrid Classifier for top-6...[0m
+[0;32m  ✓ Classifier completed successfully[0m
+
+[0;32mTOP-6 COMPLETED in 71m 35s[0m
+Results saved to: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top6/results
+
+Quick Results (Best Model):
+  Model: HybridLSTM
+  AUC: 0.7769, F1: 0.7193, MCC: 0.3982
+
+Progress: 6/13 completed, 0 failed
+
+
+[1;33m##############################################################################[0m
+[1;33m#  PROCESSING TOP-7 VARIETIES[0m
+[1;33m##############################################################################[0m
+Start Time: 2026-05-05 21:35:01
+
+[0;34mStep 1: Running Motif Pipeline for top-7...[0m
+[0;32m  ✓ Motif pipeline completed successfully[0m
+[0;34mStep 2: Running Hybrid Classifier for top-7...[0m
+[0;32m  ✓ Classifier completed successfully[0m
+
+[0;32mTOP-7 COMPLETED in 80m 2s[0m
+Results saved to: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top7/results
+
+Quick Results (Best Model):
+  Model: HybridGatedFusion
+  AUC: 0.7720, F1: 0.7082, MCC: 0.3814
+
+Progress: 7/13 completed, 0 failed
+
+
+[1;33m##############################################################################[0m
+[1;33m#  PROCESSING TOP-8 VARIETIES[0m
+[1;33m##############################################################################[0m
+Start Time: 2026-05-05 22:55:03
+
+[0;34mStep 1: Running Motif Pipeline for top-8...[0m
+[0;32m  ✓ Motif pipeline completed successfully[0m
+[0;34mStep 2: Running Hybrid Classifier for top-8...[0m
+[0;32m  ✓ Classifier completed successfully[0m
+
+[0;32mTOP-8 COMPLETED in 74m 46s[0m
+Results saved to: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top8/results
+
+Quick Results (Best Model):
+  Model: HybridGatedFusion
+  AUC: 0.7807, F1: 0.7233, MCC: 0.4141
+
+Progress: 8/13 completed, 0 failed
+
+
+[1;33m##############################################################################[0m
+[1;33m#  PROCESSING TOP-9 VARIETIES[0m
+[1;33m##############################################################################[0m
+Start Time: 2026-05-06 00:09:49
+
+[0;34mStep 1: Running Motif Pipeline for top-9...[0m
+[0;32m  ✓ Motif pipeline completed successfully[0m
+[0;34mStep 2: Running Hybrid Classifier for top-9...[0m
+[0;32m  ✓ Classifier completed successfully[0m
+
+[0;32mTOP-9 COMPLETED in 75m 53s[0m
+Results saved to: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top9/results
+
+Quick Results (Best Model):
+  Model: HybridLSTM
+  AUC: 0.7677, F1: 0.7157, MCC: 0.3925
+
+Progress: 9/13 completed, 0 failed
+
+
+[1;33m##############################################################################[0m
+[1;33m#  PROCESSING TOP-10 VARIETIES[0m
+[1;33m##############################################################################[0m
+Start Time: 2026-05-06 01:25:42
+
+[0;34mStep 1: Running Motif Pipeline for top-10...[0m
+[0;32m  ✓ Motif pipeline completed successfully[0m
+[0;34mStep 2: Running Hybrid Classifier for top-10...[0m
+[0;32m  ✓ Classifier completed successfully[0m
+
+[0;32mTOP-10 COMPLETED in 84m 21s[0m
+Results saved to: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top10/results
+
+Quick Results (Best Model):
+  Model: HybridGatedFusion
+  AUC: 0.7759, F1: 0.7134, MCC: 0.4041
+
+Progress: 10/13 completed, 0 failed
+
+
+[1;33m##############################################################################[0m
+[1;33m#  PROCESSING TOP-11 VARIETIES[0m
+[1;33m##############################################################################[0m
+Start Time: 2026-05-06 02:50:03
+
+[0;34mStep 1: Running Motif Pipeline for top-11...[0m
+[0;32m  ✓ Motif pipeline completed successfully[0m
+[0;34mStep 2: Running Hybrid Classifier for top-11...[0m
+[0;32m  ✓ Classifier completed successfully[0m
+
+[0;32mTOP-11 COMPLETED in 78m 15s[0m
+Results saved to: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top11/results
+
+Quick Results (Best Model):
+  Model: HybridCNNAttention
+  AUC: 0.7767, F1: 0.7053, MCC: 0.3691
+
+Progress: 11/13 completed, 0 failed
+
+
+[1;33m##############################################################################[0m
+[1;33m#  PROCESSING TOP-12 VARIETIES[0m
+[1;33m##############################################################################[0m
+Start Time: 2026-05-06 04:08:18
+
+[0;34mStep 1: Running Motif Pipeline for top-12...[0m
+[0;32m  ✓ Motif pipeline completed successfully[0m
+[0;34mStep 2: Running Hybrid Classifier for top-12...[0m
+[0;32m  ✓ Classifier completed successfully[0m
+
+[0;32mTOP-12 COMPLETED in 77m 29s[0m
+Results saved to: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top12/results
+
+Quick Results (Best Model):
+  Model: HybridLSTM
+  AUC: 0.7825, F1: 0.7222, MCC: 0.4009
+
+Progress: 12/13 completed, 0 failed
+
+
+[1;33m##############################################################################[0m
+[1;33m#  PROCESSING TOP-13 VARIETIES[0m
+[1;33m##############################################################################[0m
+Start Time: 2026-05-06 05:25:47
+
+[0;34mStep 1: Running Motif Pipeline for top-13...[0m
+[0;32m  ✓ Motif pipeline completed successfully[0m
+[0;34mStep 2: Running Hybrid Classifier for top-13...[0m
+[0;32m  ✓ Classifier completed successfully[0m
+
+[0;32mTOP-13 COMPLETED in 80m 39s[0m
+Results saved to: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top13/results
+
+Quick Results (Best Model):
+  Model: HybridLSTM
+  AUC: 0.7750, F1: 0.7132, MCC: 0.3924
+
+Progress: 13/13 completed, 0 failed
+
+
+==============================================================================
+[1;33mRUNNING COMPARISON ANALYSIS[0m
+==============================================================================
+================================================================================
+TOP-K VARIETIES COMPARISON
+================================================================================
+Timestamp: 2026-05-06 06:46:27
+
+Loading results...
+  Loaded top1 results
+  Loaded top2 results
+  Loaded top3 results
+  Loaded top4 results
+  Loaded top5 results
+  Loaded top6 results
+  Loaded top7 results
+  Loaded top8 results
+  Loaded top9 results
+  Loaded top10 results
+  Loaded top11 results
+  Loaded top12 results
+  Loaded top13 results
+
+Found 13 top-k configurations
+
+Creating comparison DataFrame...
+  Data saved to /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/comparison_results/comparison_data.csv
+
+Generating comparison plots...
+  All figures saved to /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/comparison_results
+
+Generating report...
+  Report saved to /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/comparison_results/comparison_report.txt
+
+================================================================================
+QUICK SUMMARY
+================================================================================
+
+  BEST Configuration:  Top 12 varieties (AUC=0.7825)
+    Model: HybridLSTM
+    Varieties: Azucena, Bala, Dhaggadeshi, IR20, IR64_Cleaned, IRAT109, Moroberekan, N22_Cleaned3, Nipponbare, Pokkali, Tampha, ZS97
+
+  WORST Configuration: Top 1 varieties (AUC=0.6853)
+    Model: HybridMLP
+
+  AUC Improvement: 0.0972 (14.2%)
+
+================================================================================
+COMPARISON COMPLETE
+================================================================================
+Results saved to: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/comparison_results
+
+==============================================================================
+[0;32mPIPELINE COMPLETE[0m
+==============================================================================
+End Time: 2026-05-06 06:46:41
+Total Elapsed Time: 14h 48m 17s
+
+Summary:
+  - Total configurations: 13
+  - Successful: 13
+  - Failed: 0
+
+Results location: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k
+  - Individual results: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top{k}/results/
+  - Comparison results: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/comparison_results/
+  - Logs: /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/logs/
+
+==============================================================================

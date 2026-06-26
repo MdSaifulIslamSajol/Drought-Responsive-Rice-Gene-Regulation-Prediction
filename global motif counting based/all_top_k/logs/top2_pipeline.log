@@ -1,0 +1,113 @@
+================================================================================
+RICE MOTIF PIPELINE - TOP 2 VARIETIES
+================================================================================
+Loading data from: /home/saiful/DeepRice/motif_based_classification_ALL_DATA/data_preprocess/RiceMetaSys_Drought_merged_all_excels_5.csv
+  Original shape: (45024, 5)
+  Cleaned shape (before variety filter): (45024, 6)
+
+  Full Variety distribution:
+Variety
+IR64_Cleaned    18134
+N22_Cleaned3    12601
+Dhaggadeshi      3176
+Nipponbare       2622
+Moroberekan      1879
+IR20             1769
+IRAT109           956
+Bala              923
+ZS97              910
+Tampha            719
+Pokkali           626
+Azucena           581
+Chandan           128
+Name: count, dtype: int64
+
+  Selecting TOP 2 varieties: ['IR64_Cleaned', 'N22_Cleaned3']
+  Filtered shape (top 2 varieties): (30735, 6)
+
+  Selected Variety distribution:
+Variety
+IR64_Cleaned    18134
+N22_Cleaned3    12601
+Name: count, dtype: int64
+
+  Tissue distribution:
+Tissue
+Panicle          9104
+Root             9056
+Leaf             3913
+Seedling         2786
+Inflorescence    2459
+Flag Leaf        1279
+Pistil           1175
+Anther            963
+Name: count, dtype: int64
+
+  Stage distribution:
+Stage
+Reproductive Stage          22035
+Panicle Elongation Stage     2799
+Vegetative Stage             2786
+Tillering Stage              2234
+Booting Stage                 881
+Name: count, dtype: int64
+
+  Label distribution (0=Down, 1=Up):
+label
+1    16648
+0    14087
+Name: count, dtype: int64
+
+Scanning 30735 sequences for 54 motifs (global counts)...
+  Processed 5000/30735 sequences (16.3%)...
+  Processed 10000/30735 sequences (32.5%)...
+  Processed 15000/30735 sequences (48.8%)...
+  Processed 20000/30735 sequences (65.1%)...
+  Processed 25000/30735 sequences (81.3%)...
+  Processed 30000/30735 sequences (97.6%)...
+  Done! Matrix shape: (30735, 62)
+
+Encoding Variety, Tissue, and Stage conditions...
+  Motif + seq stat features: 58
+  Variety features: 2
+  Tissue features: 8
+  Stage features: 5
+  Total features: 73
+
+Splitting data (0.8:0.1:0.1)...
+  Train: 24588 samples
+  Dev:   3073 samples
+  Test:  3074 samples
+    Train: Up=13318, Down=11270 (54.2% up)
+    Dev: Up=1665, Down=1408 (54.2% up)
+    Test: Up=1665, Down=1409 (54.2% up)
+
+Saved files:
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top2/data/train.csv
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top2/data/dev.csv
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top2/data/test.csv
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top2/data/feature_names.txt
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top2/data/varieties_info.txt
+
+================================================================================
+FEATURE SUMMARY
+================================================================================
+
+Motif features (global counts): 54
+  Examples: ['ABRE', 'ABRE_core', 'CE1', 'CE3', 'DRE_CRT', 'DRE_full', 'LTRE', 'MYB_core', 'MYB1AT', 'MYB2']
+
+Sequence statistics: 4
+  ['length', 'gc_content', 'at_content', 'gc_skew']
+
+Variety one-hot features: 2
+  ['Variety_IR64_Cleaned', 'Variety_N22_Cleaned3']
+
+Tissue one-hot features: 8
+  ['Tissue_Anther', 'Tissue_Flag Leaf', 'Tissue_Inflorescence', 'Tissue_Leaf', 'Tissue_Panicle', 'Tissue_Pistil', 'Tissue_Root', 'Tissue_Seedling']
+
+Stage one-hot features: 5
+  ['Stage_Booting Stage', 'Stage_Panicle Elongation Stage', 'Stage_Reproductive Stage', 'Stage_Tillering Stage', 'Stage_Vegetative Stage']
+
+================================================================================
+TOP 2 PIPELINE COMPLETE
+================================================================================

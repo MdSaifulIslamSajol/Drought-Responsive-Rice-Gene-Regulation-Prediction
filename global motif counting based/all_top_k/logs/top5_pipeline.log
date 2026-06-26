@@ -1,0 +1,118 @@
+================================================================================
+RICE MOTIF PIPELINE - TOP 5 VARIETIES
+================================================================================
+Loading data from: /home/saiful/DeepRice/motif_based_classification_ALL_DATA/data_preprocess/RiceMetaSys_Drought_merged_all_excels_5.csv
+  Original shape: (45024, 5)
+  Cleaned shape (before variety filter): (45024, 6)
+
+  Full Variety distribution:
+Variety
+IR64_Cleaned    18134
+N22_Cleaned3    12601
+Dhaggadeshi      3176
+Nipponbare       2622
+Moroberekan      1879
+IR20             1769
+IRAT109           956
+Bala              923
+ZS97              910
+Tampha            719
+Pokkali           626
+Azucena           581
+Chandan           128
+Name: count, dtype: int64
+
+  Selecting TOP 5 varieties: ['IR64_Cleaned', 'N22_Cleaned3', 'Dhaggadeshi', 'Nipponbare', 'Moroberekan']
+  Filtered shape (top 5 varieties): (38412, 6)
+
+  Selected Variety distribution:
+Variety
+IR64_Cleaned    18134
+N22_Cleaned3    12601
+Dhaggadeshi      3176
+Nipponbare       2622
+Moroberekan      1879
+Name: count, dtype: int64
+
+  Tissue distribution:
+Tissue
+Panicle          9104
+Root             9056
+Leaf             6037
+Seedling         5962
+Inflorescence    2459
+Anther           2315
+Flag Leaf        1777
+Pistil           1702
+Name: count, dtype: int64
+
+  Stage distribution:
+Stage
+Reproductive Stage          24412
+Vegetative Stage             4093
+Seedling Stage               3993
+Panicle Elongation Stage     2799
+Tillering Stage              2234
+Booting Stage                 881
+Name: count, dtype: int64
+
+  Label distribution (0=Down, 1=Up):
+label
+1    20722
+0    17690
+Name: count, dtype: int64
+
+Scanning 38412 sequences for 54 motifs (global counts)...
+  Processed 5000/38412 sequences (13.0%)...
+  Processed 10000/38412 sequences (26.0%)...
+  Processed 15000/38412 sequences (39.1%)...
+  Processed 20000/38412 sequences (52.1%)...
+  Processed 25000/38412 sequences (65.1%)...
+  Processed 30000/38412 sequences (78.1%)...
+  Processed 35000/38412 sequences (91.1%)...
+  Done! Matrix shape: (38412, 62)
+
+Encoding Variety, Tissue, and Stage conditions...
+  Motif + seq stat features: 58
+  Variety features: 5
+  Tissue features: 8
+  Stage features: 6
+  Total features: 77
+
+Splitting data (0.8:0.1:0.1)...
+  Train: 30729 samples
+  Dev:   3841 samples
+  Test:  3842 samples
+    Train: Up=16577, Down=14152 (53.9% up)
+    Dev: Up=2072, Down=1769 (53.9% up)
+    Test: Up=2073, Down=1769 (54.0% up)
+
+Saved files:
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top5/data/train.csv
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top5/data/dev.csv
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top5/data/test.csv
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top5/data/feature_names.txt
+  /home/saiful/DeepRice_Task1/motif_based_classification_ALL_DATA/MSc_thesis2/global motif counting based/all_top_k/top5/data/varieties_info.txt
+
+================================================================================
+FEATURE SUMMARY
+================================================================================
+
+Motif features (global counts): 54
+  Examples: ['ABRE', 'ABRE_core', 'CE1', 'CE3', 'DRE_CRT', 'DRE_full', 'LTRE', 'MYB_core', 'MYB1AT', 'MYB2']
+
+Sequence statistics: 4
+  ['length', 'gc_content', 'at_content', 'gc_skew']
+
+Variety one-hot features: 5
+  ['Variety_Dhaggadeshi', 'Variety_IR64_Cleaned', 'Variety_Moroberekan', 'Variety_N22_Cleaned3', 'Variety_Nipponbare']
+
+Tissue one-hot features: 8
+  ['Tissue_Anther', 'Tissue_Flag Leaf', 'Tissue_Inflorescence', 'Tissue_Leaf', 'Tissue_Panicle', 'Tissue_Pistil', 'Tissue_Root', 'Tissue_Seedling']
+
+Stage one-hot features: 6
+  ['Stage_Booting Stage', 'Stage_Panicle Elongation Stage', 'Stage_Reproductive Stage', 'Stage_Seedling Stage', 'Stage_Tillering Stage', 'Stage_Vegetative Stage']
+
+================================================================================
+TOP 5 PIPELINE COMPLETE
+================================================================================

@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(conda info *)",
+      "Bash(ps -p 741198 -o pid,etime,cmd --no-headers)",
+      "Bash(ps -p 741204 -o pid,etime,stat,cmd --no-headers)"
+    ]
+  }
+}
