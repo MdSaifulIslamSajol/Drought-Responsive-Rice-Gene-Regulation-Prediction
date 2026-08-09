@@ -1,0 +1,32 @@
+\begin{table}[!t]
+\centering
+\begin{threeparttable}
+\caption{Learned Gate Weights by Rice Variety (\texttt{GatedFusion})}
+\label{tab:gate_by_variety}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lrcc}
+\hline
+\textbf{Variety} & \textbf{Samples} & \textbf{Motif wt.\ ($g$)} & \textbf{Context wt.\ ($1{-}g$)} \\
+\hline
+IR64 & 17,618 & 0.556 & 0.444 \\
+N22 & 12,597 & 0.539 & 0.461 \\
+Dhaggadeshi & 3,176 & 0.582 & 0.418 \\
+Nipponbare & 2,622 & 0.557 & 0.443 \\
+Moroberekan & 1,879 & 0.541 & 0.459 \\
+IR20 & 1,769 & 0.586 & 0.414 \\
+IRAT109 & 956 & 0.583 & 0.417 \\
+Bala & 923 & 0.561 & 0.439 \\
+ZS97 & 910 & 0.584 & 0.416 \\
+Tampha & 719 & 0.592 & 0.408 \\
+Pokkali & 624 & 0.579 & 0.421 \\
+Azucena & 581 & 0.575 & 0.425 \\
+Chandan & 128 & 0.526 & 0.474 \\
+\hline
+\textbf{All} & \textbf{44,502} & \textbf{0.556} & \textbf{0.444} \\
+\hline
+\end{tabular}
+\begin{tablenotes}\small
+\item In the fusion $\mathbf{h}=\mathbf{g}\odot\mathbf{m}+(1-\mathbf{g})\odot\mathbf{c}$, $g$ is the mean weight on the motif representation and $1{-}g$ the weight on biological context (averaged over the 128 gate dimensions and all samples of each variety). Varieties are sorted by sample count. Context weight shows no significant dependence on sample size (Spearman $\rho=0.20$, $p=0.51$).
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

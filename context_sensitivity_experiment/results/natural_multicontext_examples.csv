@@ -1,0 +1,47 @@
+example_id,prob_spread_in_group,variety,tissue,stage,actual_label,pred_prob,pred_dir
+1,0.9983,N22_Cleaned3,Panicle,Reproductive Stage,Up,0.9986,Up
+1,0.9983,Moroberekan,Anther,Reproductive Stage,Up,0.0003,Down
+2,0.9951,Moroberekan,Pistil,Reproductive Stage,Down,0.0034,Down
+2,0.9951,Nipponbare,Leaf,Seedling Stage,Up,0.9279,Up
+2,0.9951,IR64_Cleaned,Seedling,Vegetative Stage,Up,0.9985,Up
+3,0.9949,Dhaggadeshi,Seedling,Seedling Stage,Up,0.9998,Up
+3,0.9949,Moroberekan,Pistil,Reproductive Stage,Down,0.0048,Down
+4,0.9949,Moroberekan,Pistil,Reproductive Stage,Down,0.002,Down
+4,0.9949,IRAT109,Flag Leaf,Reproductive Stage,Up,0.9969,Up
+5,0.983,Moroberekan,Pistil,Reproductive Stage,Up,0.9851,Up
+5,0.983,IR64_Cleaned,Leaf,Panicle Elongation Stage,Down,0.0021,Down
+6,0.9822,IR64_Cleaned,Seedling,Vegetative Stage,Up,0.996,Up
+6,0.9822,N22_Cleaned3,Root,Reproductive Stage,Down,0.0138,Down
+7,0.9804,N22_Cleaned3,Pistil,Reproductive Stage,Down,0.0069,Down
+7,0.9804,IR64_Cleaned,Seedling,Vegetative Stage,Up,0.9873,Up
+8,0.9795,IR64_Cleaned,Panicle,Reproductive Stage,Down,0.0185,Down
+8,0.9795,IR20,Seedling,Seedling Stage,Up,0.998,Up
+9,0.9787,IR64_Cleaned,Panicle,Reproductive Stage,Down,0.0203,Down
+9,0.9787,IR20,Seedling,Seedling Stage,Up,0.999,Up
+10,0.9776,IR64_Cleaned,Seedling,Vegetative Stage,Up,0.9906,Up
+10,0.9776,IR64_Cleaned,Panicle,Reproductive Stage,Down,0.013,Down
+11,0.9772,N22_Cleaned3,Pistil,Reproductive Stage,Down,0.0198,Down
+11,0.9772,IR64_Cleaned,Seedling,Vegetative Stage,Up,0.997,Up
+12,0.9763,IR20,Seedling,Seedling Stage,Down,0.0026,Down
+12,0.9763,IR64_Cleaned,Panicle,Reproductive Stage,Up,0.9789,Up
+13,0.9759,N22_Cleaned3,Root,Reproductive Stage,Down,0.0103,Down
+13,0.9759,IR64_Cleaned,Inflorescence,Reproductive Stage,Up,0.9862,Up
+14,0.9757,IR20,Seedling,Seedling Stage,Up,0.9984,Up
+14,0.9757,IRAT109,Flag Leaf,Reproductive Stage,Down,0.0227,Down
+15,0.974,N22_Cleaned3,Panicle,Reproductive Stage,Up,0.9996,Up
+15,0.974,IR64_Cleaned,Root,Tillering Stage,Down,0.0257,Down
+15,0.974,N22_Cleaned3,Flag Leaf,Reproductive Stage,Down,0.7008,Up
+15,0.974,Nipponbare,Leaf,Seedling Stage,Down,0.8721,Up
+15,0.974,IR64_Cleaned,Root,Reproductive Stage,Down,0.0303,Down
+16,0.9738,IR64_Cleaned,Panicle,Reproductive Stage,Down,0.0524,Down
+16,0.9738,N22_Cleaned3,Root,Reproductive Stage,Up,0.0193,Down
+16,0.9738,IR64_Cleaned,Seedling,Vegetative Stage,Up,0.9931,Up
+17,0.9731,N22_Cleaned3,Root,Reproductive Stage,Down,0.0183,Down
+17,0.9731,IR20,Seedling,Seedling Stage,Down,0.9914,Up
+18,0.972,Bala,Leaf,Vegetative Stage,Down,0.0123,Down
+18,0.972,Nipponbare,Leaf,Vegetative Stage,Up,0.9844,Up
+18,0.972,N22_Cleaned3,Anther,Reproductive Stage,Down,0.0335,Down
+19,0.9709,Pokkali,Seedling,Vegetative Stage,Up,0.9754,Up
+19,0.9709,N22_Cleaned3,Anther,Reproductive Stage,Down,0.0046,Down
+20,0.9677,IR20,Seedling,Seedling Stage,Down,0.009,Down
+20,0.9677,Moroberekan,Pistil,Reproductive Stage,Up,0.9768,Up

@@ -1,0 +1,33 @@
+====================================================================================
+GATE-VALUE ANALYSIS BY VARIETY  (HybridGatedFusion, seed 42)
+====================================================================================
+Fusion:  h = g (x) m + (1-g) (x) c   ->   g = weight on MOTIF, (1-g) = weight on CONTEXT
+Samples analysed: 44502 (train+dev+test)
+
+  Variety              N   MotifW (g)  ContextW (1-g)
+  --------------------------------------------------
+  IR64_Cleaned     17618       0.5560          0.4440
+  N22_Cleaned3     12597       0.5389          0.4611
+  Dhaggadeshi       3176       0.5822          0.4178
+  Nipponbare        2622       0.5567          0.4433
+  Moroberekan       1879       0.5413          0.4587
+  IR20              1769       0.5858          0.4142
+  IRAT109            956       0.5827          0.4173
+  Bala               923       0.5614          0.4386
+  ZS97               910       0.5836          0.4164
+  Tampha             719       0.5915          0.4085
+  Pokkali            624       0.5792          0.4208
+  Azucena            581       0.5746          0.4254
+  Chandan            128       0.5260          0.4740
+
+------------------------------------------------------------------------------------
+CLAIM TEST: is context weight (1-g) higher for better-represented varieties?
+------------------------------------------------------------------------------------
+  Pearson r (log10 N vs context weight): r = +0.097  (p = 0.753)
+  Spearman rho (N vs context weight):    rho = +0.203  (p = 0.505)
+
+  Mean context weight, 2 largest varieties (IR64, N22): 0.4525
+  Mean context weight, 3 smallest varieties:            0.4400
+
+  => WEAK/DIRECTIONAL support (positive trend but not significant): hedge as a tendency.
+====================================================================================

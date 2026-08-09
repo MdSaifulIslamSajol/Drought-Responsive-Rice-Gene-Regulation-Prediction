@@ -1,0 +1,67 @@
+========================================================================================
+CONTEXT-FLIP EXPERIMENT (natural multi-context promoters)  --  seed 42
+========================================================================================
+Primary model: HybridGatedFusion   |   Test samples: 4451
+
+Setup: some promoters appear in the test set under >= 2 different biological
+contexts (variety / tissue / stage). The promoter sequence is identical across
+those rows; only the context differs. We check whether the model predicts a
+different regulation direction (up vs. down) for the same promoter across its
+real contexts.
+
+----------------------------------------------------------------------------------------
+KEY RESULTS
+----------------------------------------------------------------------------------------
+  Unique promoter sequences in test set:              3792
+  Promoters appearing under >= 2 real contexts:       551
+  ... with a change in ACTUAL (ground-truth) label:   232 (42.1%)
+  ... with a change in HybridGatedFusion PREDICTED direction: 209 (37.9%)
+
+----------------------------------------------------------------------------------------
+PER-MODEL PREDICTED DIRECTION-CHANGE RATE (same natural setup)
+----------------------------------------------------------------------------------------
+  Model                      # changed   % changed
+  HybridGatedFusion                209       37.9%
+  HybridLSTM                       210       38.1%
+  HybridCNNAttention               226       41.0%
+  HybridMultiScaleCNN              232       42.1%
+  HybridMLP                        221       40.1%
+  HybridTransformer                263       47.7%
+  CrossAttentionFusion             286       51.9%
+
+Interpretation: for the same promoter sequence, changing only the biological
+context changes the predicted regulation direction for a substantial fraction of
+multi-context promoters. This shows the model's prediction depends on biological
+context, not the promoter sequence alone -- validating the context-conditional
+design. The actual-label change rate is the real-data reference.
+
+----------------------------------------------------------------------------------------
+DOES THE MODEL FLIP *CORRECTLY*?
+----------------------------------------------------------------------------------------
+  Of the 551 multi-context promoters:
+    - 232 have a DIFFERENT actual label across contexts (context truly matters)
+    - 319 have the SAME actual label across contexts (should NOT flip)
+
+  On the 232 variable-label promoters -- fraction the model gets the
+  direction right in EVERY context (a correct flip); and fraction where it
+  ignores context and never flips (missed):
+  On the 319 constant-label promoters -- fraction the model wrongly flips
+  (spurious); lower is better.
+
+  Model                  CorrectFlip   Missed RowAcc(var)  Spurious RowAcc(con)
+  HybridGatedFusion            50.0%    41.4%       74.2%     22.9%       81.1%
+  HybridLSTM                   52.6%    38.8%       75.1%     21.3%       79.4%
+  HybridCNNAttention           49.6%    39.7%       72.7%     27.0%       76.5%
+  HybridMultiScaleCNN          46.6%    40.5%       70.8%     29.5%       74.1%
+  HybridMLP                    43.1%    46.1%       69.5%     30.1%       74.3%
+  HybridTransformer            36.6%    43.1%       64.8%     41.1%       66.3%
+  CrossAttentionFusion         39.2%    35.8%       63.7%     43.0%       64.5%
+
+  CorrectFlip = predicts the right direction in every context of a promoter
+                whose true label changes (higher is better).
+  Missed      = predicts one direction for all contexts, ignoring the true
+                context-driven change (lower is better).
+  RowAcc(var) = per-sample accuracy on the variable-label multi-context rows.
+  Spurious    = flips even though the true label does not change (lower is better).
+  RowAcc(con) = per-sample accuracy on the constant-label multi-context rows.
+========================================================================================
